@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+	<title>메인페이지</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Real estate HTML Template">
+	<meta name="keywords" content="real estate, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Favicon -->
+	<link href="img/favicon.ico" rel="shortcut icon"/>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900%7cRoboto:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+ 
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/slicknav.min.css"/>
+
+	<!-- Main Stylesheets -->
+	<link rel="stylesheet" href="css/style.css"/>
+
+	<style>
+		#mbody{
+		   /* border: 1px solid blueviolet ;*/
+			width: 1080px;
+			height : 700px
+		}
+		
+		#side{
+			float: left;
+			background : gray;
+			border: 1px solid black;
+			width: 200px;
+			height: 700px;
+		}
+		.menu1{
+		  position: absolute;
+		  top : 50px;
+		  left: 15px;
+		}
+		.menu2{
+		  position: absolute;
+		  top : 100px;
+		  left: 15px;
+		}
+  
+		.menu3{
+		  position: absolute;
+		  top : 150px;
+		  left: 15px;
+		}
+  
+		
+  
+		#right1{
+		   display: inline-block;
+		  border: 1px solid brown;
+		  width: 880px;
+		  height: 700px;
+		}
+  
+  
+  
+	   #aaa{
+		   margin-left: 10%;
+	   }
+	</style>
+
+
+</head>
+<body>
+
+	<!-- Header Section -->
+	<header class="header-section">
+		<a href="" class="float-left navbar-brand slicknav_menu" style="color: white; font-size: 30px; margin-top: 7px;"><b>PICK&GET</b></a>
+		<nav class="header-nav fixed-top"  style="background-color: #1e025b; opacity: 90%;">
+			<div class="container" style="padding-bottom: 30px;">	
+				<a href="" class="float-left navbar-brand " style="color: white; font-size: 30px; padding-top: 0px;"><b>PICK&GET</b></a>
+			<ul class="main-menu ">
+				<li><a href="index.html" class="active">메인페이지</a></li>
+				<li><a href="#">공지</a></li>
+				<li><a href="#">포인트샵</a></li>
+				<!-- <li><a href="#"></a>
+					<ul class="sub-menu">
+						<li><a href="about-us.html">About Us</a></li>
+						<li><a href="search-result.html">Search Result</a></li>
+						<li><a href="single-property.html">Property</a></li>
+					</ul>
+				</li>
+				<li><a href="news.html">News</a></li> -->
+				<!-- <li><a href="#">로그인</a></li> -->
+			</ul>
+			<div class="header-right">
+				<div class="user-panel">
+					<a href="#" class="login">로그인</a>
+					<a href="#" class="register">회원가입</a>
+				</div>
+			</div>
+		</div>
+		</nav>
+	</header>
+	<!-- Header Section end -->
+
+	<div class="container" style="padding-top: 150px;">
+		<div class="row">
+			<div class="col-lg-12 col-md-12">
+				
+				<section class="page-section portfolio">    
+					<div id="side" >
+			
+						<ul class="nav flex-column">
+					   <li class="nav-item menu1">
+						 <button class="btn btn-info ">쿠폰 확인</button>
+					   </li>
+					   <li class="nav-item menu2">
+						   <button class="btn btn-info ">개인정보 변경</button>
+					   </li>
+					 </ul>
+			
+					</div >
+				<div id= "right1" class=".float-right col-md-8 order-md-1 container">
+					<div class="col-md-8 order-md-1" id="aaa">
+						<h4 class="mb-3">개인정보 변경</h4>
+						<hr>
+						<form class="needs-validation" action="" method="POST" onsubmit="return validate()">
+				  
+						  <div class="mb-3">
+							<button class="btn btn-primary btn-lg" type="submit" style="float: right;">확인</button>
+							<label for="username">아이디</label>
+							<div class="input-group">
+							  <input type="text" class="form-control" id="username" placeholder="Username" value="아이디" readonly>
+							</div>
+						  </div>
+						  <br>
+			
+						  <h4 class="mb-3">비밀번호 변경</h4>
+						  <form class="needs-validation" action="" method="POST" onsubmit="return validate()">
+					
+							<div class="mb-3">
+							  <label>변경할 비밀번호</label> <span>[영문대소문자,특수문자(!@#$%*)사용가능, 8자 이상]</span>
+							  <input type="password" class="form-inline" id="pwd" >
+							</div>
+							<br>
+							<div class="mb-3">
+							  <label>변경할 비밀번호 확인</label><br>
+							  <input type="password" class="form-inline" id="pwd2" >
+							</div>
+							<br>
+			
+						  <div class="mb-3">
+							<label for="gender">성별</label><br>
+							<input type="radio" name ="gender" id="male" value="M" checked><label for="male" >남</label> &nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="radio" name="gender" id="female" value="F" disabled><label for="female">여</label>
+						  </div>
+						  <br>
+						  <div class="mb-3">
+							<label>나이</label><br>
+							<input type="text" class="form-inline" id="years" disabled>
+						  </div>
+						  <br>
+						  <div class="mb-3">
+							<label>가입일</label><br>
+							<input type="date" class="form-inline" id="hireDate" value="2020-02-20" disabled>
+						  </div>
+						  <br>
+			
+				  
+						  <div class="mb-3">
+							<label>전화</label> <br>
+							<input type="text" class="form-inline" id="phone" placeholder="-제외" maxlength="12">
+						  </div>
+						  <br>
+			
+						  <div class="row">
+							<div class="col-md-5 mb-3">
+							  <label for="country">지역</label><br>
+							  <select class="custom-select d-block w-100" id="country" required="">
+								<option value="seoul">서울</option>
+								<option>United States</option>
+								<option>United States</option>
+								<option>United States</option>
+								<option>United States</option>
+								<option>United States</option>
+								<option>United States</option>
+								<option>United States</option>
+							  </select>
+							</div>
+			
+						   
+						  </div>
+			
+						
+						  
+						</form>
+					  </div>
+				</div>
+			  </section>
+				</div>
+			</div>
+	</div>
+
+	
+
+
+
+	<!-- Footer Section -->
+	<br>
+	<hr>
+	<br>
+	<footer class="footer">
+		<div class="container">
+			<div class="copyright">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> 권한은 전적으로 나한테 있습니다.
+
+		</div>
+	</footer>
+	<!-- Footer Section end -->
+	
+	<!--====== Javascripts & Jquery ======-->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+
+
+	</body>
+</html>
