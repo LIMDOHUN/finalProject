@@ -24,45 +24,7 @@
 	<link rel="stylesheet" href="css/style.css"/>
 
 	<style>
-		#mbody{
-		   /* border: 1px solid blueviolet ;*/
-			width: 1080px;
-			height : 700px
-		}
-		
-		#side{
-			float: left;
-			background : gray;
-			border: 1px solid black;
-			width: 200px;
-			height: 700px;
-		}
-		.menu1{
-		  position: absolute;
-		  top : 50px;
-		  left: 15px;
-		}
-		.menu2{
-		  position: absolute;
-		  top : 100px;
-		  left: 15px;
-		}
-  
-		.menu3{
-		  position: absolute;
-		  top : 150px;
-		  left: 15px;
-		}
-  
-		
-  
-		#right1{
-		   display: inline-block;
-		  border: 1px solid brown;
-		  width: 880px;
-		  height: 700px;
-		}
-  
+
   
   
 	   #aaa{
@@ -110,41 +72,35 @@
 			<div class="col-lg-12 col-md-12">
 				
 				<section class="page-section portfolio">    
-					<div id="side" >
-			
-						<ul class="nav flex-column">
-					   <li class="nav-item menu1">
-						 <button class="btn btn-info ">쿠폰 확인</button>
-					   </li>
-					   <li class="nav-item menu2">
-						   <button class="btn btn-info ">개인정보 변경</button>
-					   </li>
-					 </ul>
-			
-					</div >
 				<div id= "right1" class=".float-right col-md-8 order-md-1 container">
+					<div>
+						<table  align="center" width="360px">
+							<tr style ="text-align: center;">
+								<td width="120px">개인정보 변경</td>
+								<td><a href="cuponcheck.html">쿠폰확인</a></td>
+								<td><a href="qna.html">문의하기</a></td>
+							</tr>
+						</table>
+					</div>
+					<br>
 					<div class="col-md-8 order-md-1" id="aaa">
 						<h4 class="mb-3">개인정보 변경</h4>
 						<hr>
 						<form class="needs-validation" action="" method="POST" onsubmit="return validate()">
 				  
 						  <div class="mb-3">
-							<button class="btn btn-primary btn-lg" type="submit" style="float: right;">확인</button>
+							
 							<label for="username">아이디</label>
 							<div class="input-group">
-							  <input type="text" class="form-control" id="username" placeholder="Username" value="아이디" readonly>
+							  <input type="text" class="form-inline" id="username" placeholder="Username" value="아이디" readonly>
 							</div>
 						  </div>
 						  <br>
-			
-						  <h4 class="mb-3">비밀번호 변경</h4>
-						  <form class="needs-validation" action="" method="POST" onsubmit="return validate()">
-					
 							<div class="mb-3">
 							  <label>변경할 비밀번호</label> <span>[영문대소문자,특수문자(!@#$%*)사용가능, 8자 이상]</span>
 							  <input type="password" class="form-inline" id="pwd" >
 							</div>
-							<br>
+						
 							<div class="mb-3">
 							  <label>변경할 비밀번호 확인</label><br>
 							  <input type="password" class="form-inline" id="pwd2" >
@@ -156,17 +112,17 @@
 							<input type="radio" name ="gender" id="male" value="M" checked><label for="male" >남</label> &nbsp;&nbsp;&nbsp;&nbsp;
 							<input type="radio" name="gender" id="female" value="F" disabled><label for="female">여</label>
 						  </div>
-						  <br>
+						 
 						  <div class="mb-3">
 							<label>나이</label><br>
 							<input type="text" class="form-inline" id="years" disabled>
 						  </div>
-						  <br>
+						
 						  <div class="mb-3">
 							<label>가입일</label><br>
 							<input type="date" class="form-inline" id="hireDate" value="2020-02-20" disabled>
 						  </div>
-						  <br>
+					
 			
 				  
 						  <div class="mb-3">
@@ -193,7 +149,7 @@
 						   
 						  </div>
 			
-						
+						  <button class="btn btn-primary btn-lg" type="submit" style="float: right;">확인</button>
 						  
 						</form>
 					  </div>
