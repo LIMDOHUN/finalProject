@@ -15,16 +15,22 @@
   <link href="./intranet/css" rel="stylesheet">
   <link href="./intranet/1_content" rel="stylesheet">
   
+
   <!-- Custom styles for this template-->
   <link href="./intranet/sb-admin-2.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   
-  <style type="text/css">
-    a:link { text-decoration: none;}
-    a:visited { color: gray; text-decoration: none;}
-    a:hover { color: rgb(79, 79, 192);}
-   </style>
-  
+  <style>
+
+        .content{
+            width: 500px;
+            height: 100px;
+            text-align: center;
+            display: none;
+        }
+
+  </style>
+
 </head>
 
 <body id="page-top">
@@ -142,62 +148,48 @@
          <!-- Begin Page Content -->
          <div class="container-fluid">
           <!-- 컨텐츠 머리글 -->
-          <div class="d-sm-flex align-items-center justify-content-cn mb-4">
-             <h1 class="h3 mb-0 text-gray-800">월드컵 통계</h1>
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+             <h1 class="h3 mb-0 text-gray-800 ">월드컵 상세 통계</h1>
+             <hr>
            </div>
-          
-          </div>
  
            <!-- Content Row -->
-           <div class="container">
- 
-           <div class="row">
-            <button class="btn btn-outline-info">승인만 보기</button>
-            &nbsp;
-            <button class="btn btn-outline-primary">미승인만 보기</button>
-            <div class="col-lg-12 col-md-9 mb-4">
-              <br>
-              <div class="row text-center">
-                <div class="col-lg-4 col-md-3">
-                  <a href="worldcup_anal.html">
-                  <div class="card h-100">
-                    <div style="overflow: hidden; height: fit-content;">
-                      <img class="card-img-top" style="height: 250px; width: auto ;   margin-bottom: 10px;"  src="image/maxresdefault.jpg" alt="">
-                    </div>
-                  <div class="card-footer" style="background-color: white; border: none;">
-                    <h5 class="card-title">1번 월드컵</h5>
-                  </div>
-                  </div>
-                </a>
-                  </div>
-                <div class="col-lg-4 col-md-3">
-                  <a href="worldcup_anal.html">
-                  <div class="card h-100">
-                    <div style="overflow: hidden; height: fit-content;">
-                      <img class="card-img-top"  style="height: 250px; width: auto ;  margin-bottom: 10px;" src="image/25210_79534_712.jpg" alt="">
-                    </div>
-                  <div class="card-footer" style="background-color: white; border: none;">
-                    <h5 class="card-title">2번 월드컵</h5>
-                  </div>
-                  </div>
-                </a>
+
+            </div>
+             <div class="container">
+               <div class="row">
+                 <div class="col-lg-10 col-md-10" style="margin-bottom: 5px;">
+                  <div class="menu btn btn-primary" style="width: 800px;">나이기준</div>
+                  <div class="test" style="width: 800px;" align="center">
+                    <br>
+                    <h1>10대</h1>
+                    <iframe  width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRb2bwV3Js2QohzVRM1w2ywkzav5_PKo8DEF-Tk26PtSPEZMHZJoAmn_oVlgTKH5Lj8oKQnN5pVomdz/pubchart?oid=41015099&amp;format=interactive"></iframe>                
+                    <h1>20대</h1>
+                    <iframe  width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRb2bwV3Js2QohzVRM1w2ywkzav5_PKo8DEF-Tk26PtSPEZMHZJoAmn_oVlgTKH5Lj8oKQnN5pVomdz/pubchart?oid=1459021023&amp;format=interactive"></iframe>
+                    <h1>30대</h1>
+                    <iframe  width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRb2bwV3Js2QohzVRM1w2ywkzav5_PKo8DEF-Tk26PtSPEZMHZJoAmn_oVlgTKH5Lj8oKQnN5pVomdz/pubchart?oid=3714307&amp;format=interactive"></iframe>
+                    <h1>40대 이상</h1>
+                    <iframe  width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRb2bwV3Js2QohzVRM1w2ywkzav5_PKo8DEF-Tk26PtSPEZMHZJoAmn_oVlgTKH5Lj8oKQnN5pVomdz/pubchart?oid=844775533&amp;format=interactive"></iframe>
                 </div>
+                 </div>
+                 <div class="col-lg-10 col-md-10" style="margin-bottom: 5px;">
+                  <div class="menu btn btn-primary" style="width: 800px;">지역기준</div>
+                  <div class="test" style="width: 800px;">
+                  <iframe width="650px" style="margin-left: 100px;" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRb2bwV3Js2QohzVRM1w2ywkzav5_PKo8DEF-Tk26PtSPEZMHZJoAmn_oVlgTKH5Lj8oKQnN5pVomdz/pubchart?oid=1266079167&amp;format=interactive"></iframe>
+                </div>
+                 </div>
+                 <div class="col-lg-10 col-md-10" style="margin-bottom: 5px;">
+                  <div class="menu btn btn-primary" style="width: 800px;">성별기준</div>
+                  <div class="test" style="width: 800px;">
+                  <iframe width="650px" style="margin-left: 100px;" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRb2bwV3Js2QohzVRM1w2ywkzav5_PKo8DEF-Tk26PtSPEZMHZJoAmn_oVlgTKH5Lj8oKQnN5pVomdz/pubchart?oid=1266079167&amp;format=interactive"></iframe>
+                </div>
+                 </div>
                 
-                <div class="col-lg-4 col-md-3">
-                  <a href="worldcup_anal.html">
-                    <div class="card">
-                      <div style="overflow: hidden; height: fit-content;">
-                        <img class="card-img-top"  style="height: 250px; width: auto ; margin-bottom: 10px;" src="image/images.jfif" alt="">
-                      </div>
-                    <div class="card-footer" style="background-color: white; border: none;">
-                      <h5 class="card-title">3번 월드컵</h5>
-                    </div>
-                    </div>
-              </a>
-              </div>
-            </div>
-            </div>
-            </div>
+               </div>
+          </div>
+       <!-- /.container-fluid -->
+
+     </div>
      <!-- End of Main Content -->
 
 
@@ -222,6 +214,20 @@
   <script src="intranet/jquery.min.js"></script>
   <script src="intranet/bootstrap.bundle.min.js"></script>
 
+        
+  <script>
+    $(function(){
+        // 초기 상태 설정
+        $('.test').slideUp();
+        $('.inbtn').slideUp();
+
+        $('.menu').click(function(){ 
+            console.log($(this).next('div'));
+            $(this).next('div').slideToggle(1000,function(){
+            });
+        });
+    });
+</script>
 
 
 
