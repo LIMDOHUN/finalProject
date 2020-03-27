@@ -235,7 +235,6 @@ Header section
 	padding: 0 53px;
 	background: #1e025b;
 	z-index: 999;
-	opacity: 90%;
 }
 
 .header-section.header-bg-2 {
@@ -275,10 +274,6 @@ Header section
 	transition: 0.3s;
 }
 
-.main-menu li a:hover,
-.main-menu li a.active {
-	border-bottom: 2px solid #ff000a;
-}
 
 .main-menu li:hover>.sub-menu {
 	visibility: visible;
