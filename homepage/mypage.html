@@ -74,11 +74,11 @@
 				<section class="page-section portfolio">    
 				<div id= "right1" class=".float-right col-md-8 order-md-1 container">
 					<div>
-						<table  align="center" width="360px">
+						<table  align="center" width="420px">
 							<tr style ="text-align: center;">
-								<td width="120px">개인정보 변경</td>
-								<td><a href="cuponcheck.html">쿠폰확인</a></td>
-								<td><a href="qna.html">문의하기</a></td>
+								<td width="140px" ><span class="btn btn-outline-info">개인정보 변경</span></td>
+								<td width="140px"><a href="cuponcheck.html" class="btn btn-outline-primary">&nbsp;쿠폰확인&nbsp;</a></td>
+								<td width="140px"><a href="qna.html" class=" btn btn-outline-primary">&nbsp;문의하기&nbsp;</a></td>
 							</tr>
 						</table>
 					</div>
@@ -91,19 +91,17 @@
 						  <div class="mb-3">
 							
 							<label for="username">아이디</label>
-							<div class="input-group">
-							  <input type="text" class="form-inline" id="username" placeholder="Username" value="아이디" readonly>
-							</div>
+							  <input type="text" class="form-control" style="width:30%;"id="username" placeholder="Username" value="아이디" readonly>
 						  </div>
 						  <br>
 							<div class="mb-3">
 							  <label>변경할 비밀번호</label> <span>[영문대소문자,특수문자(!@#$%*)사용가능, 8자 이상]</span>
-							  <input type="password" class="form-inline" id="pwd" >
+							  <input type="password" class="form-control" style="width:30%;" id="pwd" >
 							</div>
 						
 							<div class="mb-3">
 							  <label>변경할 비밀번호 확인</label><br>
-							  <input type="password" class="form-inline" id="pwd2" >
+							  <input type="password" class="form-control" style="width:30%;" id="pwd2" >
 							</div>
 							<br>
 			
@@ -115,26 +113,25 @@
 						 
 						  <div class="mb-3">
 							<label>나이</label><br>
-							<input type="text" class="form-inline" id="years" disabled>
+							<input type="text" class="form-control" style="width:30%;" id="years" disabled>
 						  </div>
 						
 						  <div class="mb-3">
 							<label>가입일</label><br>
-							<input type="date" class="form-inline" id="hireDate" value="2020-02-20" disabled>
+							<input type="date" class="form-control"  style="width:30%;" id="hireDate" value="2020-02-20" disabled>
 						  </div>
 					
 			
 				  
 						  <div class="mb-3">
 							<label>전화</label> <br>
-							<input type="text" class="form-inline" id="phone" placeholder="-제외" maxlength="12">
+							<input type="text" class="form-control" style="width:30%;" id="phone" placeholder="-제외" maxlength="12">
 						  </div>
 						  <br>
 			
-						  <div class="row">
-							<div class="col-md-5 mb-3">
+							<div class="mb-3">
 							  <label for="country">지역</label><br>
-							  <select class="custom-select d-block w-100" id="country" required="">
+							  <select class="custom-select " style="width:30%;" id="country" required="">
 								<option value="seoul">서울</option>
 								<option>United States</option>
 								<option>United States</option>
@@ -147,7 +144,7 @@
 							</div>
 			
 						   
-						  </div>
+					
 			
 						  <button class="btn btn-primary btn-lg" type="submit" style="float: right;">확인</button>
 						  
